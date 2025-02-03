@@ -1,0 +1,10 @@
+#For computational functions on arrays
+import numpy as np
+
+#For visualization
+import matplotlib.pyplot as plt
+
+#For functions on cleaning, exploring and manipulating datasets 
+import pandas as pd
+
+#
