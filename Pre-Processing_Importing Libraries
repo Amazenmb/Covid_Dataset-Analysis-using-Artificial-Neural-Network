@@ -7,4 +7,14 @@ import matplotlib.pyplot as plt
 #For functions on cleaning, exploring and manipulating datasets 
 import pandas as pd
 
-#
+#SimpleImputer from Scikit-learn for completing missing values with different strategies
+from sklearn.impute import SimpleImputer
+
+#For encoding of categorical data for independent variables
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+
+#For encoding of categorical data for dependent variable or label
+from sklearn.preprocessing import LabelEncoder
+
+
