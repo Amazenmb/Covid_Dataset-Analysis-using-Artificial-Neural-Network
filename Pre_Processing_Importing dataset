@@ -3,7 +3,19 @@
 #Read .csv file and load into panda dataframe
 data_set = pd.read_csv('Covid_Data.csv')
 
-#X is the set of inputs or independent variables or features. In the dataset, except the last column, all are input variables or features hence splitting the dataset accordingly.
+'''
+The dataset has 6 columns in total, with 5 columns for features and 1 column for output. 
+The features are:
+Age(Num)
+body_temperature(str)
+chronic_disease(str)
+breathing_issue (str)
+Blood O2 Level in Percentage(Num)
+Needed Hospitalization(str)
+
+X is the set of inputs or independent variables or features.
+In the dataset, except the last column, all are input variables or features hence splitting the dataset accordingly.
+'''
 X = data_set.iloc[:, :-1].values
 
 #Y is the output.  This is to be predicted based on the features
