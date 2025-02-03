@@ -1,1 +1,10 @@
+#Upload the dataset into current folder and then import
 
+#Read .csv file and load into panda dataframe
+data_set = pd.read_csv('Covid_Data.csv')
+
+#X is the set of inputs or independent variables or features. In the dataset, except the last column, all are input variables or features hence splitting the dataset accordingly.
+X = data_set.iloc[:, :-1].values
+
+#Y is the output.  This is to be predicted based on the features
+y = data_set.iloc[:, -1].values
