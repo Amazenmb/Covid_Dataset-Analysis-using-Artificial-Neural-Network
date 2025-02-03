@@ -22,7 +22,7 @@ OneHotEncoder transforms each categorical feature with n_categories possible val
 ct = ColumnTransformer(transformers=[('encoder',OneHotEncoder(), [1])], remainder= 'passthrough')
 X = np.array(ct.fit_transform(X))
 
-#For encoding of label
+#For encoding of label. Encode target labels with value between 0 and n_classes-1.
 le = LabelEncoder()
 y = le.fit_transform(y)
 
