@@ -7,4 +7,22 @@ chronic_disease(str)
 breathing_issue (str)
 Blood O2 Level in Percentage(Num)
 Needed Hospitalization(str)
+
+As the machine learning algorithm will not understand the string value for required computation,
+we will have to assign some numerical values to each of the string valued columns. For example, in body_temperature,
+there are 3 categories: Normal, Moderate and High. So, for a person having moderate body temperature, it can be assigned
+010. As it is understood, the categorical encoding will result in 3 columns for body temperature each representing Normal, Moderate and High body temperature
 '''
+
+'''
+For encoding of categorical features or independent variables:
+OneHotEncoder transforms each categorical feature with n_categories possible values into n_categories binary features, with one of them 1, and all others 0.
+'''
+
+ct = ColumnTransformer(transformers=[('encoder',OneHotEncoder(), [1])], remainder= 'passthrough')
+X = np.array(ct.fit_transform(X))
+
+#For encoding of label
+le = LabelEncoder()
+y = le.fit_transform(y)
+
