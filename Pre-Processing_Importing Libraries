@@ -17,4 +17,10 @@ from sklearn.preprocessing import OneHotEncoder
 #For encoding of categorical data for dependent variable or label
 from sklearn.preprocessing import LabelEncoder
 
+#For splitting dataset into Training and Test set
+from sklearn.model_selection import train_test_split
+
+#For feature scaling
+from sklearn.preprocessing import StandardScaler
+
 
