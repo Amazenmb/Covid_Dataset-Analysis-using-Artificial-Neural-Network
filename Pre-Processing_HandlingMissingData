@@ -6,5 +6,15 @@ body_temperature(str)
 chronic_disease(str)
 breathing_issue (str)
 Blood O2 Level in Percentage(Num)
-Needed Hospitalization(str)
+Needed Hospitalization(str) - Output
+
+In case of any missing data, we will use SimpleImputer library to fill it with the data based on strategy. For numeric, strategy will be mean.
+Here, if you check the dataset, the missing values are for Age and Blood O2 level, hence we will use these columns only i.e., 0 and 4. The transformed array by
+Panda will be having np.nan wherever values are missing.
 '''
+
+imputer=sklearn.SimpleImputer(missing_values=np.nan, strategy='mean')
+imputer.fit(X[:,0:5:4])
+X[:,0:5:4] = imputer.transform(X[:,0:5:4])
+
+
