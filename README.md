@@ -1,5 +1,5 @@
 # Covid_Dataset-Analysis-using-Machine-Learning
-Data Points: 
+Data Points as in original dataset: 
 -	Age (Natural Number)
 -	Body Temperature (Normal, Moderate, High)
 - Chronic Disease (no/yes)
