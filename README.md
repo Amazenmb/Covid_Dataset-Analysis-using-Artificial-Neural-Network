@@ -1,5 +1,5 @@
 # Covid_Dataset-Analysis-using-Machine-Learning
-Data Points as in original dataset: 
+**Data Points as in original dataset:**
 -	Age (Natural Number)
 -	Body Temperature (Normal, Moderate, High)
 - Chronic Disease (no/yes)
@@ -7,7 +7,7 @@ Data Points as in original dataset:
 - Blood O2 level in % (Natural Number)
 - Needed hospitalization (yes/no)
   
-Steps
+**Steps for Analysis**
 1.	Data Preprocessing
 -	Importing libraries
 -	Importing dataset
