@@ -1,1 +1,10 @@
-
+'''
+The dataset has 6 columns in total, with 5 columns for features and 1 column for output. 
+The features are:
+Age(Num)
+body_temperature(str)
+chronic_disease(str)
+breathing_issue (str)
+Blood O2 Level in Percentage(Num)
+Needed Hospitalization(str)
+'''
