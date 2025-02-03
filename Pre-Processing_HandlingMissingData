@@ -14,6 +14,8 @@ Panda will be having np.nan wherever values are missing.
 '''
 
 imputer=sklearn.SimpleImputer(missing_values=np.nan, strategy='mean')
+
+#X[:,0:5:4] means dat to be picked from 0th to 5th column with an interval of 4
 imputer.fit(X[:,0:5:4])
 X[:,0:5:4] = imputer.transform(X[:,0:5:4])
 
