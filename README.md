@@ -1,10 +1,10 @@
 # Covid_Dataset-Analysis-using-Machine-Learning
 **Data Points as in original dataset:**
--	Age (Natural Number)
+-	Age (Num)
 -	Body Temperature (Normal, Moderate, High)
 - Chronic Disease (no/yes)
 - Breathing Issue (no/yes)
-- Blood O2 level in % (Natural Number)
+- Blood O2 level in % (Num)
 - Needed hospitalization (yes/no)
   
 **Steps for Analysis**
@@ -12,9 +12,9 @@
 -	Importing libraries
 -	Importing dataset
 -	Handling missing data
--	Encoding independent variable
--	Encoding dependent variable
+-	Encoding categorical data (for body_temperature,chronic_disease, breathing_issue and needed_hopsitlaization)
 -	Splitting training and test data
 -	Feature scaling
-2.	Analysis
+  
+2.	Analysis and Prediction
 -	ANN implementation
